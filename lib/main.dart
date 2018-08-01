@@ -1,71 +1,46 @@
 import 'package:flutter/material.dart';
+import 'package:splashscreen/splashscreen.dart';
 
-void main() => runApp(new MyApp());
+void main() {
+  runApp(new MaterialApp(
+    home: new MyApp(),
+  ));
+}
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => new _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: 'YourBillz',
-      theme: new ThemeData(
-        fontFamily: 'Oswald',
-        primaryColorDark: Color(0x007000),
-        accentColor: Color(0x76D248),
-        dividerColor: Color(0xE1E1E1),
-        splashColor: Color(0x41A00E),
-        //scaffoldBackgroundColor: Color(0x41A00E),
-        textSelectionColor: Color(0x222222),
-        primarySwatch: Colors.green,
-        //primaryColor: Color(0x41A00E),
-      ),
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+    return new SplashScreen(
+        seconds: 5,
+        navigateAfterSeconds: new AfterSplash(),
+        title: new Text(
+          'Welcome In SplashScreen',
+          style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+        ),
+        imageNetwork: 'https://i.imgur.com/TyCSG9A.png',
+        backgroundColor: Colors.white,
+        styleTextUnderTheLoader: new TextStyle(),
+        photoSize: 100.0,
+        onClick: () => print("Flutter Egypt"),
+        loaderColor: Colors.red);
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => new _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
+class AfterSplash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(widget.title),
-      ),
+      appBar: new AppBar(title: new Text("Welcome In SplashScreen Package")),
       body: new Center(
-        child: new Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            new Text(
-              'You have pushed the button this many times:',
-            ),
-            new Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
+        child: new Text(
+          "Succeeded!",
+          style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
         ),
-      ),
-      floatingActionButton: new FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: new Icon(Icons.add),
       ),
     );
   }
