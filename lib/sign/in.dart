@@ -16,7 +16,7 @@ class LoginScreen extends StatelessWidget {
             ),
         child: Center(
           child: Center(
-            child: Column(
+            child: ListView(shrinkWrap: true,padding: EdgeInsets.only(left: 24.0, right: 24.0),
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(8.0),
