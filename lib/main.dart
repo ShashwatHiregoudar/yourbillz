@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
+import './sign/in.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -18,16 +19,14 @@ class _MyAppState extends State<MyApp> {
     return new SplashScreen(
         seconds: 5,
         navigateAfterSeconds: new AfterSplash(),
-        title: new Text(
-          'Welcome In SplashScreen',
-          style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
-        ),
-        imageNetwork: 'https://i.imgur.com/TyCSG9A.png',
-        backgroundColor: Colors.white,
-        styleTextUnderTheLoader: new TextStyle(),
+        //imageNetwork: 'https://i.imgur.com/TyCSG9A.png',
+        imageNetwork: 'https://imgur.com/33L3Y2Z.jpg',
+        //backgroundColor: Colors.white,
+        //styleTextUnderTheLoader: new TextStyle(),
         photoSize: 100.0,
         onClick: () => print("Flutter Egypt"),
-        loaderColor: Colors.red);
+        //loaderColor: Colors.red
+        );
   }
 }
 
@@ -37,9 +36,20 @@ class AfterSplash extends StatelessWidget {
     return new Scaffold(
       appBar: new AppBar(title: new Text("Welcome In SplashScreen Package")),
       body: new Center(
-        child: new Text(
-          "Succeeded!",
-          style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
+        child: Column(
+          children: <Widget>[
+            new Text(
+              "Succeeded!",
+              style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
+            ),
+            new RaisedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (BuildContext context) => LoginScreen()
+                ));
+              },
+            )
+          ],
         ),
       ),
     );
