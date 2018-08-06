@@ -1,8 +1,8 @@
 import 'dart:io';
+import 'package:flutter/material.dart';
 import 'package:yourbillz/globals.dart' as global;
 import 'package:yourbillz/sign/datadisplayscree.dart';
 
-import 'package:flutter/material.dart';
 import 'dart:io' show Platform;
 import 'package:dio/dio.dart';
 

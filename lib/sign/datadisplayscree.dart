@@ -6,7 +6,7 @@ class DataDisplayScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('First Screen'),
+        title: Text('Data_Display Screen'),
       ),
       body: Center(
         child: ListView(children: <Widget>[
