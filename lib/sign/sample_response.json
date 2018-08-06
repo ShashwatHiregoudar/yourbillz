@@ -1,0 +1,58 @@
+{
+    "login_response": {
+        "errorcode": "2000",
+        "login_status": "1",
+        "login_detail": [{
+            "id": "590",
+            "userId": "stek_803",
+            "uid": "01FE15BCS178",
+            "ref_id": "",
+            "firstName": "Shashwat",
+            "lastName": "Hiregoudar",
+            "userEmail": "shashwathiregoudar@gmail.com",
+            "userPass": "ashssh1997",
+            "gender": "Male",
+            "userPhone": "9481380640",
+            "otp": "1",
+            "logIn_status": "1",
+            "device_id": "123456",
+            "device_type": "android",
+            "email_flag": "0",
+            "student": "1",
+            "college": "BVB",
+            "usn_update": "0",
+            "lat": "",
+            "lng": ""
+        }],
+        "user_detail": [{
+                    "id": "957",
+                    "user_id": "stek_803",
+                    "amount": "32",
+                    "category": "Food\/Dining",
+                    "subcategory": "Fast food",
+                    "spend": "college canteen",
+                    "purpose": "no dabbbi",
+                    "transaction_type": "",
+                    "udate": "2018-03-21"
+                }, {
+                    "id": "958",
+                    "user_id": "stek_803",
+                    "amount": "50",
+                    "category": "Miscellaneous",
+                    "subcategory": "Miscellaneous",
+                    "spend": "food and music",
+                    "purpose": "",
+                    "transaction_type": "",
+                    "udate": "2018-03-21"
+                }, {
+                    "id": "959",
+                    "user_id": "stek_803",
+                    "amount": "10",
+                    "category": "Food\/Dining",
+                    "subcategory": "Alcohol",
+                    "spend": "sugarcane juice",
+                    "purpose": "",
+                    "transaction_type": "",
+                    "udate": "2018-03-21"
+                }
+            }]}
