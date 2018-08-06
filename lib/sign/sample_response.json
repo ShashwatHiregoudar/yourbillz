@@ -15,7 +15,7 @@
             "userPhone": "9481380640",
             "otp": "1",
             "logIn_status": "1",
-            "device_id": "123456",
+            "device_id": "1234155665",
             "device_type": "android",
             "email_flag": "0",
             "student": "1",
@@ -25,34 +25,127 @@
             "lng": ""
         }],
         "user_detail": [{
-                    "id": "957",
-                    "user_id": "stek_803",
-                    "amount": "32",
-                    "category": "Food\/Dining",
-                    "subcategory": "Fast food",
-                    "spend": "college canteen",
-                    "purpose": "no dabbbi",
-                    "transaction_type": "",
-                    "udate": "2018-03-21"
-                }, {
-                    "id": "958",
-                    "user_id": "stek_803",
-                    "amount": "50",
-                    "category": "Miscellaneous",
-                    "subcategory": "Miscellaneous",
-                    "spend": "food and music",
-                    "purpose": "",
-                    "transaction_type": "",
-                    "udate": "2018-03-21"
-                }, {
-                    "id": "959",
-                    "user_id": "stek_803",
-                    "amount": "10",
-                    "category": "Food\/Dining",
-                    "subcategory": "Alcohol",
-                    "spend": "sugarcane juice",
-                    "purpose": "",
-                    "transaction_type": "",
-                    "udate": "2018-03-21"
-                }
-            }]}
+            "id": "957",
+            "user_id": "stek_803",
+            "amount": "32",
+            "category": "Food\/Dining",
+            "subcategory": "Fast food",
+            "spend": "college canteen",
+            "purpose": "no dabbbi",
+            "transaction_type": "",
+            "udate": "2018-03-21"
+        }, {
+            "id": "958",
+            "user_id": "stek_803",
+            "amount": "50",
+            "category": "Miscellaneous",
+            "subcategory": "Miscellaneous",
+            "spend": "food and music",
+            "purpose": "",
+            "transaction_type": "",
+            "udate": "2018-03-21"
+        }, {
+            "id": "959",
+            "user_id": "stek_803",
+            "amount": "10",
+            "category": "Food\/Dining",
+            "subcategory": "Alcohol",
+            "spend": "sugarcane juice",
+            "purpose": "",
+            "transaction_type": "",
+            "udate": "2018-03-21"
+        }, {
+            "id": "998",
+            "user_id": "stek_803",
+            "amount": "45",
+            "category": "Food\/Dining",
+            "subcategory": "Fast food",
+            "spend": "egg rice",
+            "purpose": "was feeling lonely",
+            "transaction_type": "",
+            "udate": "2018-03-23"
+        }, {
+            "id": "999",
+            "user_id": "stek_803",
+            "amount": "45",
+            "category": "Food\/Dining",
+            "subcategory": "Fast food",
+            "spend": "egg rice",
+            "purpose": "was feeling lonely",
+            "transaction_type": "",
+            "udate": "2018-03-23"
+        }, {
+            "id": "1013",
+            "user_id": "stek_803",
+            "amount": "15",
+            "category": "Food\/Dining",
+            "subcategory": "Alcohol",
+            "spend": "exercise colony",
+            "purpose": "juice sugarcane",
+            "transaction_type": "",
+            "udate": "2018-03-26"
+        }, {
+            "id": "1014",
+            "user_id": "stek_803",
+            "amount": "10",
+            "category": "Food\/Dining",
+            "subcategory": "Alcohol",
+            "spend": "old bus stand ",
+            "purpose": "to get change\ud83d\ude05",
+            "transaction_type": "",
+            "udate": "2018-03-28"
+        }, {
+            "id": "1015",
+            "user_id": "stek_803",
+            "amount": "15",
+            "category": "Food\/Dining",
+            "subcategory": "Alcohol",
+            "spend": "exercise colony",
+            "purpose": "juice sugarcane",
+            "transaction_type": "",
+            "udate": "2018-03-26"
+        }, {
+            "id": "1016",
+            "user_id": "stek_803",
+            "amount": "10",
+            "category": "Food\/Dining",
+            "subcategory": "Alcohol",
+            "spend": "old bus stand ",
+            "purpose": "to get change\ud83d\ude05",
+            "transaction_type": "",
+            "udate": "2018-03-28"
+        }],
+        "bill_count": {
+            "bill_count": "4"
+        },
+        "pdf_details": [{
+            "shop_id": "44",
+            "shop_name": "KLE Technology University",
+            "url": "dXBsb2FkLzIwMTgvMDUvS0xFX1RlY2hub2xvZ3lfVW5pdmVyc2l0eV8wNTI5MjAxOC0xMjQyNDIucGRm",
+            "bill_date": "2018-05-29",
+            "shop_category": "Education"
+        }, {
+            "shop_id": "44",
+            "shop_name": "KLE Technology University",
+            "url": "dXBsb2FkLzIwMTgvMDUvS0xFX1RlY2hub2xvZ3lfVW5pdmVyc2l0eV8wNTE0MjAxOC0xNzA5NDAucGRm",
+            "bill_date": "2018-05-14",
+            "shop_category": "Education"
+        }, {
+            "shop_id": "44",
+            "shop_name": "KLE Technology University",
+            "url": "dXBsb2FkLzIwMTgvMDQvWW91ckJpbGx6XzA0MDkyMDE4LTEyNTc0OC5wZGY=",
+            "bill_date": "2018-04-09",
+            "shop_category": "Education"
+        }, {
+            "shop_id": "44",
+            "shop_name": "KLE Technology University",
+            "url": "dXBsb2FkLzIwMTgvMDMvS0xFX1RlY2hub2xvZ3lfVW5pdmVyc2l0eV8wMzIyMjAxOC0xNTQ2MDYucGRm",
+            "bill_date": "2018-03-22",
+            "shop_category": "Education"
+        }],
+        "shop_count": [{
+            "shop_count": "4",
+            "shop_name": "KLE Technology University"
+        }]
+    }
+}

@@ -1,9 +1,6 @@
-//import 'dart:async';
-import 'dart:async';
 import 'dart:io';
-import 'package:http/http.dart' as http;
-import '../globals.dart' as global;
-import './datadisplayscree.dart';
+import 'package:yourbillz/globals.dart' as global;
+import 'package:yourbillz/sign/datadisplayscree.dart';
 
 import 'package:flutter/material.dart';
 import 'dart:io' show Platform;
@@ -46,8 +43,10 @@ class LoginScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextField(
-                    controller: usercontroller,
                     autofocus: true,
+                    onChanged: (text){
+                      body['userEmail'] = text;
+                    },
                     decoration: InputDecoration(
                       //enabled: true,
                       labelText: "Username",
@@ -64,7 +63,9 @@ class LoginScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextField(
-                    controller: passwordcontroller,
+                    onChanged: (text){
+                      body['userPass'] = text;
+                    },
                     obscureText: true,
                     decoration: InputDecoration(
                       labelText: "Password",
@@ -80,8 +81,8 @@ class LoginScreen extends StatelessWidget {
                 RaisedButton(
                   child: Text('Login'),
                   onPressed: () async {
-                    body['userEmail'] = usercontroller.text;
-                    body['userPass'] = passwordcontroller.text;
+                    //body['userEmail'] = usercontroller.text;
+                    //body['userPass'] = passwordcontroller.text;
                     print(body['userEmail']);
                     print(body['userPass']);
                     print(body['device_type']);
