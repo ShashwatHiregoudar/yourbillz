@@ -13,12 +13,6 @@ class DataDisplayScreen extends StatelessWidget {
           Card(
             child: Text(global.response.data),
           ),
-          RaisedButton(
-            child: Text('Launch screen'),
-            onPressed: () {
-              // Navigate to second screen when tapped!
-            },
-          ),
         ]),
       ),
     );

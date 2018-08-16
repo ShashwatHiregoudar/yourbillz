@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:yourbillz/globals.dart' as global;
-import 'package:yourbillz/sign/in/datadisplayscree.dart';
+import 'package:yourbillz/sign/datadisplayscree.dart';
 
 import 'dart:io' show Platform;
 import 'package:dio/dio.dart';
@@ -80,8 +80,6 @@ class LoginScreen extends StatelessWidget {
                 RaisedButton(
                   child: Text('Login'),
                   onPressed: () async {
-                    //body['userEmail'] = usercontroller.text;
-                    //body['userPass'] = passwordcontroller.text;
                     print(body['userEmail']);
                     print(body['userPass']);
                     print(body['device_type']);

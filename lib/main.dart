@@ -18,29 +18,11 @@ void main() {
       primarySwatch: Colors.green,
       //primaryColor: Color(0x41A00E),
     ),
-    home: new MyApp(),
+    home: new HomePage(),
   ));
 }
-
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => new _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
-  Widget build(BuildContext context) {
-    return new SplashScreen(
-      seconds: 2,
-      navigateAfterSeconds: new AfterSplash(),
-      imageNetwork: 'https://imgur.com/33L3Y2Z.jpg',
-      photoSize: 100.0,
-      onClick: () => print("Flutter Egypt"),
-    );
-  }
-}
-
-class AfterSplash extends StatelessWidget {
+/*
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -64,5 +46,12 @@ class AfterSplash extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+*/
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Register();
   }
 }

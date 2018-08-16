@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:yourbillz/globals.dart' as global;
-
+import 'package:yourbillz/sign/datadisplayscree.dart';
 import 'dart:io' show Platform;
 import 'package:dio/dio.dart';
 
@@ -17,7 +17,7 @@ Map<String, String> body = {
   'gender': '',
   'userPhone': '',
   'userPass': '',
-  'device_id': '351646514654',
+  'device_id': '1234155665',
   'device_type': Platform.operatingSystem,
 };
 
@@ -47,17 +47,6 @@ class Register extends StatelessWidget {
               leading: Icon(Icons.account_circle),
               title: TextField(
                 keyboardType: TextInputType.text,
-                decoration: new InputDecoration(
-                  hintText: "Last Name",
-                ),
-                onChanged: (text) {
-                  body['lastName'] = text;
-                },
-              ),
-            ),
-            ListTile(
-              leading: Icon(Icons.person),
-              title: TextField(
                 decoration: new InputDecoration(
                   hintText: "Last Name",
                 ),
@@ -139,6 +128,32 @@ class Register extends StatelessWidget {
                 },
               ),
             ),
+            ListTile(
+                title: RaisedButton(
+              child: Text('Submit'),
+              onPressed: () async {
+                print(body['firstName']);
+                print(body['lastName']);
+                print(body['userEmail']);
+                print(body['gender']);
+                print(body['userPhone']);
+                print(body['userPass']);
+                print(body['device_id']);
+                print(body['device_type']);
+                global.response = await dio.post(
+                    "http://yourbillz.com/test2/register.php",
+                    data: body,
+                    options: Options(
+                        responseType: ResponseType.JSON,
+                        contentType: ContentType
+                            .parse("application/x-www-form-urlencoded")));
+                Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DataDisplayScreen()),
+                    );
+              },
+            ))
           ],
         ),
       ),
