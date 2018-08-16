@@ -1,10 +1,11 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:yourbillz/globals.dart' as global;
-import 'package:yourbillz/sign/datadisplayscree.dart';
+import 'package:yourbillz/sign/in/datadisplayscree.dart';
 
 import 'dart:io' show Platform;
 import 'package:dio/dio.dart';
+import 'package:yourbillz/sign/up/up.dart';
 
 Dio dio = new Dio(Options(
   //baseUrl: "http://yourbillz.com/test2/login.php",
@@ -23,8 +24,6 @@ Map<String, String> body = {
 class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var usercontroller = TextEditingController();
-    var passwordcontroller = TextEditingController();
     return Scaffold(
       appBar: AppBar(
         title: Text('Login Screen'),
@@ -105,10 +104,15 @@ class LoginScreen extends StatelessWidget {
                 ),
                 FlatButton(
                   child: Text(
-                    'Forgot password?',
+                    'New user?',
                     style: TextStyle(color: Colors.black54),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => RegisterScreen()));
+                  },
                 ),
               ],
             ),

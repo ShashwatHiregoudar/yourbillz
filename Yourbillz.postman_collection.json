@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "021fa849-c2f0-4daf-9cda-68cc0b340681",
+		"name": "Yourbillz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "701ff1ce-3be5-4f1d-8b00-53fde8ab4fcf",
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userEmail",
+							"value": "shashwathiregoudar@gmail.com",
+							"sessionValue": "shashwathiregoudar@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "userPass",
+							"value": "Ashssh1997",
+							"sessionValue": "Ashssh1997",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "ios",
+							"sessionValue": "ios",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "6565465168",
+							"sessionValue": "6565465168",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://yourbillz.com/test2/login.php",
+					"protocol": "http",
+					"host": [
+						"yourbillz",
+						"com"
+					],
+					"path": [
+						"test2",
+						"login.php"
+					]
+				},
+				"description": "For Login Requests"
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "120417c7-93c3-4bd3-bca2-683980c842e7",
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "userEmail",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "userPhone",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "userPass",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ref_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://yourbillz.com/test2/register.php",
+					"protocol": "http",
+					"host": [
+						"yourbillz",
+						"com"
+					],
+					"path": [
+						"test2",
+						"register.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

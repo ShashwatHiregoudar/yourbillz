@@ -39,6 +39,9 @@ flutter:
   assets:
    - assets/splash_screen.jpg
    - assets/loginbackground.png
+   - assets/profile.png
+   - assets/registration_selector.jpg
+   - assets/main_registration.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
-import './sign/in.dart';
+import 'package:yourbillz/sign/in/in.dart';
+import 'package:yourbillz/sign/up/up_clg.dart';
 //import 'package:fire';
 
 void main() {
@@ -56,7 +57,7 @@ class AfterSplash extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (BuildContext context) => LoginScreen()));
+                        builder: (BuildContext context) => Register()));
               },
             )
           ],
