@@ -1,4 +1,4 @@
-import 'package:yourbillz/globals.dart' as global;
+import 'package:yourbillz/global/globals.dart' as global;
 import 'package:flutter/material.dart';
 
 class DataDisplayScreen extends StatelessWidget {

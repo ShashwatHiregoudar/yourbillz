@@ -1,9 +1,12 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:yourbillz/globals.dart' as global;
+import 'package:yourbillz/global/globals.dart' as global;
 import 'package:yourbillz/sign/datadisplayscree.dart';
 import 'dart:io' show Platform;
 import 'package:dio/dio.dart';
+
+
+// enum gender {male,female}
 
 Dio dio = new Dio(Options(
   connectTimeout: 2000,
@@ -67,43 +70,15 @@ class Register extends StatelessWidget {
                 },
               ),
             ),
-            ListTile(
-                title: Card(
-              child: Row(
-                children: <Widget>[
-                  new Text('Male'),
-                  new Radio(
-                    activeColor: Colors.deepPurple,
-                    key: null,
-                    groupValue: null,
-                    value: .5,
-                    onChanged: (double value) {
-                      body['gender'] = 'male';
-                    },
-                  ),
-                  new Text('Female'),
-                  new Radio(
-                    activeColor: Colors.deepPurple,
-                    key: null,
-                    groupValue: null,
-                    value: .5,
-                    onChanged: (double value) {
-                      body['gender'] = 'female';
-                    },
-                  ),
-                  new Text('Other'),
-                  new Radio(
-                    activeColor: Colors.deepPurple,
-                    key: null,
-                    groupValue: null,
-                    value: .5,
-                    onChanged: (double value) {
-                      body['gender'] = 'other';
-                    },
-                  ),
-                ],
-              ),
-            )),
+            /*Row(
+              children: <Widget>[
+                RadioListTile(
+                  groupValue: null,
+                  onChanged: (Null value) {},
+                  value: null,
+                ),
+              ],
+            ),*/
             ListTile(
               leading: Icon(Icons.phone),
               title: TextField(
@@ -148,10 +123,9 @@ class Register extends StatelessWidget {
                         contentType: ContentType
                             .parse("application/x-www-form-urlencoded")));
                 Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => DataDisplayScreen()),
-                    );
+                  context,
+                  MaterialPageRoute(builder: (context) => DataDisplayScreen()),
+                );
               },
             ))
           ],
@@ -163,82 +137,43 @@ class Register extends StatelessWidget {
 
 /*
 
-TextField(
-              decoration: InputDecoration(
-                labelText: "First Name",
-                hintText: "Ajay",
+RadioListTile(
+                title: Card(
+              child: Row(
+                children: <Widget>[
+                  new Text('Male'),
+                  new Radio(
+                    activeColor: Colors.deepPurple,
+                    key: null,
+                    groupValue: null,
+                    value: .5,
+                    onChanged: (double value) {
+                      body['gender'] = 'male';
+                    },
+                  ),
+                  new Text('Female'),
+                  new Radio(
+                    activeColor: Colors.deepPurple,
+                    key: null,
+                    groupValue: null,
+                    value: .5,
+                    onChanged: (double value) {
+                      body['gender'] = 'female';
+                    },
+                  ),
+                  new Text('Other'),
+                  new Radio(
+                    activeColor: Colors.deepPurple,
+                    key: null,
+                    groupValue: null,
+                    value: .5,
+                    onChanged: (double value) {
+                      body['gender'] = 'other';
+                    },
+                  ),
+                ],
               ),
-              onChanged: (text) {
-                body['userEmail'] = text;
-              },
-              autocorrect: true,
-              autofocus: true,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                labelText: "Last name",
-                hintText: "hirekerur",
-              ),
-              onChanged: (text) {
-                body['userEmail'] = text;
-              },
-              autocorrect: true,
-              autofocus: true,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                labelText: "email",
-                hintText: "abc@gmail.com",
-              ),
-              onChanged: (text) {
-                body['userEmail'] = text;
-              },
-              autocorrect: true,
-              autofocus: true,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                labelText: "gender",
-                hintText: "Male / Female",
-              ),
-              onChanged: (text) {
-                body['userEmail'] = text;
-              },
-              autocorrect: true,
-              autofocus: true,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                labelText: "Username",
-                hintText: "01FE15BCSxxx / abc@gmail.com",
-              ),
-              onChanged: (text) {
-                body['userEmail'] = text;
-              },
-              autocorrect: true,
-              autofocus: true,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                labelText: "Username",
-                hintText: "01FE15BCSxxx / abc@gmail.com",
-              ),
-              onChanged: (text) {
-                body['userEmail'] = text;
-              },
-              autocorrect: true,
-              autofocus: true,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                labelText: "Username",
-                hintText: "01FE15BCSxxx / abc@gmail.com",
-              ),
-              onChanged: (text) {
-                body['userEmail'] = text;
-              },
-              autocorrect: true,
-              autofocus: true,
-            ),
+            ))
+
 
 */

@@ -1,0 +1,17 @@
+{
+    "register_response": {
+        "errorcode": "1000",
+        "message": "Successfully registered",
+        "uid": "94813OUFLX",
+        "firstName": "Mom",
+        "lastName": "Dad",
+        "userEmail": "momdad@gmail.com",
+        "userPhone": "9481380642",
+        "userPass": "ashssh1997",
+        "ref_id": "ind_5b76b9",
+        "otp": "4750",
+        "gender": "female",
+        "device_id": "698867985",
+        "device_type": "android"
+    }
+}

@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:yourbillz/globals.dart' as global;
+import 'package:yourbillz/global/globals.dart' as global;
 import 'package:yourbillz/sign/datadisplayscree.dart';
 
 import 'dart:io' show Platform;
@@ -106,6 +106,7 @@ class LoginScreen extends StatelessWidget {
                     style: TextStyle(color: Colors.black54),
                   ),
                   onPressed: () {
+                    print(global.mainuser);
                     Navigator.push(
                     context,
                     MaterialPageRoute(
